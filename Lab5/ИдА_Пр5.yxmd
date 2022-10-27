@@ -1,0 +1,621 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>4DB8EBBDEA5482F5EE55CBAF1A06BDE934D5DBB34</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * 
+from r2dannie 
+	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy 
+	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student 
+	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel 
+	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec 
+	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica 
+	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod 
+	inner join r2region on r2region.kod_region = r2gorod.kod_region 
+	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student 
+	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina 
+	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=myconnection
+Query=select * 
+from r2dannie 
+	in...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="kod_student" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="fam" size="20" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+            <Field name="ima" size="20" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+            <Field name="otch" size="20" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+            <Field name="date_rognen" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Date" />
+            <Field name="pasp_dannie" size="50" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+            <Field name="telephone" size="14" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+            <Field name="kod_gruppy" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="dom" size="5" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+            <Field name="kvart" size="5" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+            <Field name="kod_ulica" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="kod_gruppa" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="nazvanie" size="20" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+            <Field name="kod_spec" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="kod_student2" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="kod_roditel" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="kod_roditel2" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="fio_rod" size="50" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+            <Field name="rabota" size="100" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+            <Field name="tel" size="14" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+            <Field name="kod_spec2" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="nazvanie2" size="30" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+            <Field name="kod_ulica2" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="kod_gorod" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="nazvanie3" size="25" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+            <Field name="kod_gorod2" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="nazvanie4" size="25" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+            <Field name="kod_region" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="kod_region2" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="nazvanie5" size="50" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+            <Field name="ocenka" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="kod_dischiplina" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="kod_student3" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="kod_prepod" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="kod_dischiplina2" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="nazvanie6" size="50" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+            <Field name="kod_prepod2" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="Int32" />
+            <Field name="fio_prepod" size="50" source="File: odbc:DSN=myconnection;UID=MGPU_ADEU_109;PWD=__EncPwd1__|||select * &#xA;from r2dannie &#xA;	inner join r2gruppa on r2gruppa.kod_gruppa = r2dannie.kod_gruppy &#xA;	inner join r2roddeti on r2dannie.kod_student = r2roddeti.kod_student &#xA;	inner join r2roditeli on r2roditeli.kod_roditel = r2roddeti.kod_roditel &#xA;	inner join r2spec on r2spec.kod_spec = r2gruppa.kod_spec &#xA;	inner join r2ulica on r2ulica.kod_ulica = r2dannie.kod_ulica &#xA;	inner join r2gorod on r2gorod.kod_gorod = r2ulica.kod_gorod &#xA;	inner join r2region on r2region.kod_region = r2gorod.kod_region &#xA;	inner join r2uspev on r2dannie.kod_student = r2uspev.kod_student &#xA;	inner join r2dischiplina on r2dischiplina.kod_dischiplina = r2uspev.kod_dischiplina &#xA;	inner join r2prepod on r2prepod.kod_prepod = r2uspev.kod_prepod" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings>
+        <Position x="186" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">True</Value>
+          <Value name="List Box (11)">"kod_student","fam","ima","otch","date_rognen","pasp_dannie","telephone","kod_gruppy","dom","kvart","kod_ulica","kod_gruppa","nazvanie","kod_spec","kod_student2","kod_roditel","kod_roditel2","fio_rod","rabota","tel","kod_spec2","nazvanie2","kod_ulica2","kod_gorod","nazvanie3","kod_gorod2","nazvanie4","kod_region","kod_region2","nazvanie5","ocenka","kod_dischiplina","kod_student3","kod_prepod","kod_dischiplina2","nazvanie6","kod_prepod2","fio_prepod"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">True</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="330" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="kod_student" />
+            <Field field="pasp_dannie" />
+            <Field field="telephone" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="426" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="ocenka" order="Descending" />
+            <Field field="kod_prepod" order="Ascending" />
+            <Field field="kod_spec" order="Ascending" />
+            <Field field="kod_gruppa" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ocenka - Descending
+kod_prepod - Ascending
+kod_spec - Ascending
+kod_gruppa - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="978" y="-6" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False">
+            <Field name="kod_student" />
+            <Field name="kod_gruppa" />
+            <Field name="kod_spec" />
+            <Field name="ocenka" />
+          </GroupingFields>
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="kod_student" selected="True" Alignment="Right" />
+            <Field name="fam" selected="True" Alignment="Left" />
+            <Field name="ima" selected="True" Alignment="Left" />
+            <Field name="otch" selected="True" Alignment="Left" />
+            <Field name="date_rognen" selected="True" Alignment="Left" />
+            <Field name="pasp_dannie" selected="True" Alignment="Left" />
+            <Field name="telephone" selected="True" Alignment="Left" />
+            <Field name="kod_gruppy" selected="True" Alignment="Right" />
+            <Field name="dom" selected="True" Alignment="Left" />
+            <Field name="kvart" selected="True" Alignment="Left" />
+            <Field name="kod_ulica" selected="True" Alignment="Right" />
+            <Field name="kod_gruppa" selected="True" Alignment="Right" />
+            <Field name="nazvanie" selected="True" Alignment="Left" />
+            <Field name="kod_spec" selected="True" Alignment="Right" />
+            <Field name="kod_student2" selected="True" Alignment="Right" />
+            <Field name="kod_roditel" selected="True" Alignment="Right" />
+            <Field name="kod_roditel2" selected="True" Alignment="Right" />
+            <Field name="fio_rod" selected="True" Alignment="Left" />
+            <Field name="rabota" selected="True" Alignment="Left" />
+            <Field name="tel" selected="True" Alignment="Left" />
+            <Field name="kod_spec2" selected="True" Alignment="Right" />
+            <Field name="nazvanie2" selected="True" Alignment="Left" />
+            <Field name="kod_ulica2" selected="True" Alignment="Right" />
+            <Field name="kod_gorod" selected="True" Alignment="Right" />
+            <Field name="nazvanie3" selected="True" Alignment="Left" />
+            <Field name="kod_gorod2" selected="True" Alignment="Right" />
+            <Field name="nazvanie4" selected="True" Alignment="Left" />
+            <Field name="kod_region" selected="True" Alignment="Right" />
+            <Field name="kod_region2" selected="True" Alignment="Right" />
+            <Field name="nazvanie5" selected="True" Alignment="Left" />
+            <Field name="ocenka" selected="True" Alignment="Right" />
+            <Field name="kod_dischiplina" selected="True" Alignment="Right" />
+            <Field name="kod_student3" selected="True" Alignment="Right" />
+            <Field name="kod_prepod" selected="True" Alignment="Right" />
+            <Field name="kod_dischiplina2" selected="True" Alignment="Right" />
+            <Field name="nazvanie6" selected="True" Alignment="Left" />
+            <Field name="kod_prepod2" selected="True" Alignment="Right" />
+            <Field name="fio_prepod" selected="True" Alignment="Left" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="978" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <type>bar</type>
+              <mode>markers</mode>
+              <orientation>v</orientation>
+              <ysrc>kod_student</ysrc>
+              <aggregationField>ysrc</aggregationField>
+              <aggregationFunction>count</aggregationFunction>
+              <aggregationFieldName>kod_student</aggregationFieldName>
+              <xsrc>nazvanie</xsrc>
+              <name>Количество студентов в группе</name>
+              <textposition>None</textposition>
+              <marker>
+                <line>
+                  <width>0</width>
+                </line>
+              </marker>
+            </Traces>
+            <Layout>
+              <title>
+                <text>
+                </text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+                <size>12</size>
+              </font>
+              <autosize>false</autosize>
+              <width>600</width>
+              <height>700</height>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>-0.8995302150577551</range>
+                <range>15.4466843388398</range>
+                <autorange>false</autorange>
+                <title>
+                  <text>Группа</text>
+                </title>
+                <type>category</type>
+                <tickfont>
+                  <size>12</size>
+                </tickfont>
+                <nticks>0</nticks>
+              </xaxis>
+              <yaxis>
+                <range>-0.66761639302954912</range>
+                <range>18.833130794076308</range>
+                <autorange>false</autorange>
+                <title>
+                  <text>kod_student</text>
+                </title>
+                <type>linear</type>
+              </yaxis>
+              <legend>
+                <font>
+                  <size>12</size>
+                </font>
+                <borderwidth>0</borderwidth>
+              </legend>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>80</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="978" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <orientation>v</orientation>
+              <type>bar</type>
+              <xsrc>nazvanie</xsrc>
+              <ysrc>avg_arifmetical</ysrc>
+              <name>&amp;nbsp;&lt;b&gt;Среднее арифметическое значение оценок по группам&lt;/b&gt; &lt;br&gt;</name>
+              <textposition>None</textposition>
+              <marker>
+                <line>
+                  <width>0</width>
+                </line>
+              </marker>
+            </Traces>
+            <Layout>
+              <title>
+                <text>
+                </text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+                <size>12</size>
+              </font>
+              <autosize>false</autosize>
+              <width>800</width>
+              <height>500</height>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>-3.9634171352059884</range>
+                <range>17.382838773185469</range>
+                <autorange>false</autorange>
+                <title>
+                  <text>Группы&lt;br&gt;</text>
+                </title>
+                <type>category</type>
+                <tickfont>
+                  <size>12</size>
+                </tickfont>
+                <nticks>0</nticks>
+              </xaxis>
+              <yaxis>
+                <range>-52.807660711652</range>
+                <range>140.89158639445429</range>
+                <autorange>false</autorange>
+                <title>
+                  <text>ocenka</text>
+                </title>
+                <type>category</type>
+              </yaxis>
+              <dragmode>pan</dragmode>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>119</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="558" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="nazvanie" action="GroupBy" rename="nazvanie" />
+            <SummarizeField field="ocenka" action="Sum" rename="Sum_ocenka" />
+            <SummarizeField field="ocenka" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="690" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Round([Sum_ocenka]/[Count], 0.01)" field="avg_arifmetical" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[avg_arifmetical = Round([Sum_ocenka]/[Count], 0.01)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="990" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <type>bar</type>
+              <mode>markers</mode>
+              <ysrc>ocenka</ysrc>
+              <aggregationField>ysrc</aggregationField>
+              <aggregationFunction>mean</aggregationFunction>
+              <aggregationFieldName>ocenka</aggregationFieldName>
+              <orientation>v</orientation>
+              <name>Средние оценки по каждому предмету.</name>
+              <xsrc>nazvanie6</xsrc>
+            </Traces>
+            <Layout>
+              <title>
+                <text>
+                </text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+              </font>
+              <autosize>false</autosize>
+              <width>700</width>
+              <height>650</height>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>-0.5</range>
+                <range>5.5</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>&lt;br&gt;
+Названия предметов&lt;br&gt;</text>
+                </title>
+                <type>category</type>
+                <tickfont>
+                  <size>12</size>
+                </tickfont>
+                <nticks>0</nticks>
+              </xaxis>
+              <yaxis>
+                <range>0</range>
+                <range>3.9489255683587667</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>ocenka</text>
+                </title>
+                <type>linear</type>
+              </yaxis>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>80</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="834" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="25">C:\Users\mokri\OneDrive\Рабочий стол\Лабораторные работы\ИдА_Пр5_2.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ИдА_Пр5_2.xlsx
+Query=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output26" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Duplicates" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Unique" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ИдА_Пр5</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="3e5347a5-3eb2-424f-acc6-b588d5bbdefd" />
+      <Telemetry>
+        <PreviousWorkflowId value="865e13da-1e2c-4e19-8b0a-d1a835f1f213" />
+        <OriginWorkflowId value="865e13da-1e2c-4e19-8b0a-d1a835f1f213" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
